@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PSC</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+ 
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PSC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Get in Touch</h1>
+            <p class="lead">We're here to help! Contact us for any questions, feedback, or support.</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark p-2 me-2"><i class="bi bi-clock me-1"></i> 24/7 Support</span>
+                <span class="badge bg-light text-dark p-2 me-2"><i class="bi bi-check-circle me-1"></i> Quick Response</span>
+                <span class="badge bg-light text-dark p-2"><i class="bi bi-shield-check me-1"></i> Secure Communication</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Contact Cards -->
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Speak directly with our support team</p>
+                <div class="mt-4">
+                    <h4 class="text-primary">+1 (555) 123-4567</h4>
+                    <p class="text-muted small">Monday - Friday: 9AM - 6PM EST</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>Send us an email for detailed inquiries</p>
+                <div class="mt-4">
+                    <h5 class="text-primary">support@psc.com</h5>
+                    <p class="text-muted small">General inquiries</p>
+                    <h5 class="text-primary mt-3">help@psc.com</h5>
+                    <p class="text-muted small">Technical support</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+                <h3>Live Chat</h3>
+                <p>Chat instantly with our support agents</p>
+                <div class="mt-4">
+                    <button class="btn btn-primary shadcn-btn w-100">
+                        <i class="bi bi-chat-left-text me-2"></i> Start Live Chat
+                    </button>
+                    <p class="text-muted small mt-2">Average wait time: < 2 minutes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="contact-form">
+                    <h2 class="mb-4">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select class="form-control" id="subject" required>
+                                <option value="" selected disabled>Select a subject</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Inquiry</option>
+                                <option value="feedback">Feedback/Suggestions</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for updates and tutorials
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="reset" class="btn btn-outline-secondary me-md-2">Clear Form</button>
+                            <button type="submit" class="btn btn-primary shadcn-btn">
+                                <i class="bi bi-send me-2"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <!-- Office Hours -->
+                <div class="office-hours">
+                    <h4><i class="bi bi-clock me-2"></i> Office Hours</h4>
+                    <p class="text-muted">Our support team is available during these hours</p>
+                    
+                    <table class="hours-table">
+                        <tr>
+                            <td class="day">Monday - Friday</td>
+                            <td class="time">9:00 AM - 6:00 PM EST</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Saturday</td>
+                            <td class="time">10:00 AM - 4:00 PM EST</td>
+                        </tr>
+                        <tr>
+                            <td class="day">Sunday</td>
+                            <td class="time">Closed</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="mt-4 p-3 bg-light rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Current Status:</span>
+                            <span class="status-badge status-open">
+                                <i class="bi bi-circle-fill me-1"></i> Open Now
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Response Time -->
+                <div class="response-time">
+                    <div class="response-icon">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <h4>Quick Response Time</h4>
+                    <p>We typically respond within:</p>
+                    <h2 class="display-6 fw-bold">2-4 hours</h2>
+                    <small>During business hours</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Methods -->
+        <div class="contact-methods">
+            <div class="method-card">
+                <h5><i class="bi bi-whatsapp text-success me-2"></i> WhatsApp</h5>
+                <p class="text-muted small">Chat with us on WhatsApp</p>
+                <p class="mb-0 fw-bold">+1 (555) 987-6543</p>
+            </div>
+            
+            <div class="method-card">
+                <h5><i class="bi bi-slack text-warning me-2"></i> Slack Community</h5>
+                <p class="text-muted small">Join our developer community</p>
+                <p class="mb-0 fw-bold">Join PSC Slack</p>
+            </div>
+            
+            <div class="method-card">
+                <h5><i class="bi bi-github text-dark me-2"></i> GitHub Issues</h5>
+                <p class="text-muted small">Report bugs or request features</p>
+                <p class="mb-0 fw-bold">github.com/psc/issues</p>
+            </div>
+            
+            <div class="method-card">
+                <h5><i class="bi bi-twitter text-info me-2"></i> Twitter</h5>
+                <p class="text-muted small">Follow us for updates</p>
+                <p class="mb-0 fw-bold">@psc_support</p>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2 class="text-center mb-4">Meet Our Support Team</h2>
+            <p class="text-center text-muted mb-5">Our dedicated team is ready to help you with any questions</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div style="height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));"></div>
+                    <div class="team-avatar">SJ</div>
+                    <div class="team-body">
+                        <h4>Sarah Johnson</h4>
+                        <p class="text-muted">Technical Support Lead</p>
+                        <p class="small">Specializes in frontend development and web technologies</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div style="height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));"></div>
+                    <div class="team-avatar">MR</div>
+                    <div class="team-body">
+                        <h4>Michael Rodriguez</h4>
+                        <p class="text-muted">Backend Support Specialist</p>
+                        <p class="small">Expert in databases, APIs, and server-side technologies</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div style="height: 100px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));"></div>
+                    <div class="team-avatar">ED</div>
+                    <div class="team-body">
+                        <h4>Emily Davis</h4>
+                        <p class="text-muted">Student Support Manager</p>
+                        <p class="small">Helps students with course-related questions and guidance</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <p class="text-center text-muted mb-5">Quick answers to common questions</p>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get a response?</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to all inquiries within 2-4 hours during business hours (Monday-Friday, 9AM-6PM EST). For urgent matters, please use our live chat or phone support for immediate assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer technical support for course materials?</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide comprehensive technical support for all our courses and tutorials. Our support team includes experts in frontend development, backend systems, and database management who can help you with any technical challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I get a refund for a course?</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee for all our courses. If you're not satisfied with your purchase, simply contact our billing department within 30 days of purchase for a full refund, no questions asked.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer corporate or team training?</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide customized corporate training programs for teams. Contact our partnership team at partnerships@psc.com to discuss your organization's specific training needs and get a customized quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I report a bug or technical issue?</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can report bugs through our GitHub issues page, via email at bugs@psc.com, or through the feedback form on our website. Please include as much detail as possible about the issue, including screenshots and steps to reproduce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <div class="map-placeholder">
+                <div class="text-center">
+                    <i class="bi bi-geo-alt" style="font-size: 4rem;"></i>
+                    <h4 class="mt-3">Our Location</h4>
+                    <p class="mb-0">123 Tech Street, Silicon Valley, CA 94000</p>
+                    <p class="text-muted">Visit our headquarters (by appointment only)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="alert alert-warning mt-5">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-exclamation-triangle-fill me-3" style="font-size: 1.5rem;"></i>
+                <div>
+                    <h5 class="mb-1">Emergency Technical Support</h5>
+                    <p class="mb-0">For urgent website issues or service disruptions, call our emergency line: <strong>+1 (555) 911-4567</strong> (24/7 available)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr class="mt-4 mb-4">
+        <div class="text-center">
+            <p>&copy; 2025 PSC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Simple validation
+            if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Show success message (in a real app, you would send this to a server)
+            alert('Thank you for your message! We will respond within 2-4 hours.');
+            this.reset();
+        });
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Live chat simulation
+        document.querySelector('.contact-card .shadcn-btn').addEventListener('click', function() {
+            alert('Live chat is currently offline. Please send us an email or call us for immediate assistance.');
+        });
+    </script>
+</body>
+</html>

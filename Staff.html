@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | PSC</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PSC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="staff-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Meet Our Team</h1>
+            <p class="lead">Passionate educators, developers, and innovators dedicated to your learning journey</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Department Filter -->
+        <div class="department-filter">
+            <button class="dept-btn active" data-dept="all">All Departments</button>
+            <button class="dept-btn" data-dept="instruction">Instructors</button>
+            <button class="dept-btn" data-dept="development">Development</button>
+            <button class="dept-btn" data-dept="management">Management</button>
+            <button class="dept-btn" data-dept="support">Support</button>
+        </div>
+
+        <!-- Team Stats -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Students Taught</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Courses Created</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership Team -->
+        <div class="leadership-section">
+            <h2 class="text-center mb-4">Leadership Team</h2>
+            <p class="text-center text-muted mb-5">Our visionary leaders guiding PSC's mission</p>
+            
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <div class="leadership-avatar">PS</div>
+                    <div class="leadership-info">
+                        <h3 class="leadership-name">Pabitra Swain</h3>
+                        <p class="leadership-role">CEO & Founder</p>
+                        <p class="leadership-bio">With 5+ years in EdTech, Alex founded PSC with a vision to make quality programming education accessible to everyone.</p>
+                        <div class="leadership-quote">
+                            "Education is the most powerful tool we can use to change the world."
+                        </div>
+                        <div class="staff-skills">
+                            <span class="skill-tag">EdTech</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="leadership-card">
+                    <div class="leadership-avatar">NS</div>
+                    <div class="leadership-info">
+                        <h3 class="leadership-name">Nirmal Ku Sahu</h3>
+                        <p class="leadership-role">Chief Learning Officer</p>
+                        <p class="leadership-bio">Former Corporate employee in Trainer with expertise in curriculum design and educational technology implementation.</p>
+                        <div class="leadership-quote">
+                            "Great learning happens when complex concepts become simple and accessible."
+                        </div>
+                        <div class="staff-skills">
+                            <span class="skill-tag">Curriculum</span>
+                            <span class="skill-tag">Pedagogy</span>
+                            <span class="skill-tag">Instructional Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff Grid -->
+        <h2 class="text-center mb-4">Our Expert Team</h2>
+        <p class="text-center text-muted mb-5">Meet the professionals who create and deliver our content</p>
+        
+        <div class="staff-grid">
+            <!-- Instructor Cards -->
+            <div class="staff-card" data-dept="instruction">
+                <div class="staff-header">
+                    <div class="staff-avatar">P</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Mr.Pabitra</h3>
+                    <p class="staff-title">Senior Instructor</p>
+                    <span class="staff-dept dept-instructor">Instruction</span>
+                    <p class="staff-bio">10+ years teaching web development. Specializes in frontend technologies and responsive design.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card" data-dept="instruction">
+                <div class="staff-header">
+                    <div class="staff-avatar">M</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Mr.Nirmal</h3>
+                    <p class="staff-title">Senior Backend Instructor</p>
+                    <span class="staff-dept dept-instructor">Instruction</span>
+                    <p class="staff-bio">Full-stack developer with expertise in ML/AI, Java, and database systems.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">ML/AI</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card" data-dept="instruction">
+                <div class="staff-header">
+                    <div class="staff-avatar">V</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Mr.Vilash</h3>
+                    <p class="staff-title">Backend Instructor</p>
+                    <span class="staff-dept dept-instructor">Instruction</span>
+                    <p class="staff-bio">Data scientist specializing in Python, machine learning, and data visualization techniques.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">ML/AI</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Development Team -->
+            <div class="staff-card" data-dept="development">
+                <div class="staff-header">
+                    <div class="staff-avatar">S</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Mr.M.Satish</h3>
+                    <p class="staff-title">Data Science Instructor</p>
+                    <span class="staff-dept dept-developer">Development</span>
+                    <p class="staff-bio">Builds and maintains our learning platform with focus on scalability and user experience.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">.Net</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card" data-dept="development">
+                <div class="staff-header">
+                    <div class="staff-avatar">MK</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Manoj Kumar</h3>
+                    <p class="staff-title">UX/UI Designer</p>
+                    <span class="staff-dept dept-developer">Development</span>
+                    <p class="staff-bio">Creates intuitive and engaging user interfaces for our learning platform and courses.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Management Team -->
+            <div class="staff-card" data-dept="management">
+                <div class="staff-header">
+                    <div class="staff-avatar">MB</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Muna Badatya</h3>
+                    <p class="staff-title">Operations Manager</p>
+                    <span class="staff-dept dept-management">Management</span>
+                    <p class="staff-bio">Ensures smooth operations and coordinates between different departments.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">Operations</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Coordination</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-calendar"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Support Team -->
+            <div class="staff-card" data-dept="support">
+                <div class="staff-header">
+                    <div class="staff-avatar">TC</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Thomas Chen</h3>
+                    <p class="staff-title">Support Lead</p>
+                    <span class="staff-dept dept-support">Support</span>
+                    <p class="staff-bio">Leads our support team to provide excellent assistance to students and instructors.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">Customer Service</span>
+                        <span class="skill-tag">Technical Support</span>
+                        <span class="skill-tag">Communication</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-chat"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-card" data-dept="support">
+                <div class="staff-header">
+                    <div class="staff-avatar">AM</div>
+                </div>
+                <div class="staff-body">
+                    <h3 class="staff-name">Amanda Miller</h3>
+                    <p class="staff-title">Community Manager</p>
+                    <span class="staff-dept dept-support">Support</span>
+                    <p class="staff-bio">Manages our student community and ensures engaging learning experiences.</p>
+                    <div class="staff-skills">
+                        <span class="skill-tag">Community</span>
+                        <span class="skill-tag">Engagement</span>
+                        <span class="skill-tag">Events</span>
+                    </div>
+                    <div class="staff-contact">
+                        <a href="#" class="contact-btn"><i class="bi bi-envelope"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="contact-btn"><i class="bi bi-slack"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Department Sections -->
+        <div class="department-section">
+            <div class="dept-card">
+                <div class="dept-header">
+                    <div class="dept-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div>
+                        <h3>Instruction Department</h3>
+                        <p class="text-muted">Our team of expert instructors with real-world industry experience</p>
+                    </div>
+                </div>
+                <p>The Instruction Department consists of professionals who have worked in top tech companies and now dedicate their time to teaching. Each instructor brings practical experience and industry insights to create engaging, relevant content.</p>
+                <div class="mt-3">
+                    <span class="badge bg-primary me-2">25 Instructors</span>
+                    <span class="badge bg-secondary me-2">500+ Years Combined Experience</span>
+                    <span class="badge bg-success">50+ Courses Created</span>
+                </div>
+            </div>
+            
+            <div class="dept-card">
+                <div class="dept-header">
+                    <div class="dept-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div>
+                        <h3>Development Department</h3>
+                        <p class="text-muted">Building and maintaining our learning platform</p>
+                    </div>
+                </div>
+                <p>Our Development Team ensures our platform is reliable, scalable, and provides the best learning experience. They work on everything from our website infrastructure to interactive learning tools and mobile applications.</p>
+                <div class="mt-3">
+                    <span class="badge bg-primary me-2">12 Developers</span>
+                    <span class="badge bg-secondary me-2">Modern Tech Stack</span>
+                    <span class="badge bg-success">99.9% Uptime</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Our Team -->
+        <div class="join-team">
+            <h2 class="mb-4">Join Our Team</h2>
+            <p class="lead mb-4">We're always looking for talented individuals passionate about education</p>
+            <a href="#" class="modal-trigger" id="openCareers">
+                <i class="bi bi-briefcase"></i> View Open Positions
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr class="mt-4 mb-4">
+        <div class="text-center">
+            <p>&copy; 2025 PSC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Staff Detail Modal -->
+    <!-- <div class="staff-modal" id="staffModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="mb-0">Staff Profile</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detailed-avatar">SJ</div>
+                <div class="detailed-info">
+                    <h2>Sarah Johnson</h2>
+                    <p class="lead">Senior Instructor & Curriculum Developer</p>
+                    <span class="staff-dept dept-instructor">Instruction Department</span>
+                </div>
+                
+                <div class="detailed-stats">
+                    <div class="detailed-stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="detailed-stat">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Courses Created</div>
+                    </div>
+                    <div class="detailed-stat">
+                        <div class="stat-number">50k+</div>
+                        <div class="stat-label">Students Taught</div>
+                    </div>
+                    <div class="detailed-stat">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                </div>
+                
+                <h4>Biography</h4>
+                <p>Sarah began her career as a frontend developer at Google, where she worked for 5 years on various web applications. She discovered her passion for teaching while mentoring junior developers and decided to transition into education full-time.</p>
+                
+                <p>At PSC, Sarah has developed some of our most popular courses, including "Web Development Fundamentals" and "Advanced JavaScript Patterns." Her teaching philosophy focuses on practical, project-based learning that prepares students for real-world development challenges.</p>
+                
+                <h4 class="mt-4">Expertise</h4>
+                <div class="staff-skills">
+                    <span class="skill-tag">HTML5/CSS3</span>
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Web Accessibility</span>
+                    <span class="skill-tag">Performance Optimization</span>
+                </div>
+                
+                <h4 class="mt-4">Education</h4>
+                <ul>
+                    <li>M.S. Computer Science, Stanford University</li>
+                    <li>B.S. Software Engineering, MIT</li>
+                </ul>
+                
+                <div class="staff-contact mt-4 justify-content-center">
+                    <a href="#" class="contact-btn me-3"><i class="bi bi-envelope"></i> Email</a>
+                    <a href="#" class="contact-btn me-3"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="contact-btn"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Careers Modal -->
+    <div class="staff-modal" id="careersModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="mb-0">Career Opportunities</h2>
+                <button class="close-modal" id="closeCareers">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 class="mb-4">Open Positions</h3>
+                
+                <div class="dept-card mb-4">
+                    <h4>Senior JavaScript Instructor</h4>
+                    <p class="text-muted">Instruction Department • Full-time • Remote</p>
+                    <p>We're looking for an experienced JavaScript developer to create and teach advanced JavaScript courses. You'll need 5+ years of experience and a passion for teaching.</p>
+                    <div class="mt-3">
+                        <span class="badge bg-light text-dark me-2">JavaScript</span>
+                        <span class="badge bg-light text-dark me-2">React</span>
+                        <span class="badge bg-light text-dark">Node.js</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 shadcn-btn">Apply Now</button>
+                </div>
+                
+                <div class="dept-card mb-4">
+                    <h4>Full Stack Developer</h4>
+                    <p class="text-muted">Development Department • Full-time • Hybrid</p>
+                    <p>Join our development team to build new features for our learning platform. Experience with React, Node.js, and AWS required.</p>
+                    <div class="mt-3">
+                        <span class="badge bg-light text-dark me-2">React</span>
+                        <span class="badge bg-light text-dark me-2">Node.js</span>
+                        <span class="badge bg-light text-dark">AWS</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 shadcn-btn">Apply Now</button>
+                </div>
+                
+                <div class="dept-card mb-4">
+                    <h4>Student Success Manager</h4>
+                    <p class="text-muted">Support Department • Full-time • Remote</p>
+                    <p>Help our students succeed by providing guidance, support, and resources throughout their learning journey.</p>
+                    <div class="mt-3">
+                        <span class="badge bg-light text-dark me-2">Customer Service</span>
+                        <span class="badge bg-light text-dark me-2">Education</span>
+                        <span class="badge bg-light text-dark">Communication</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 shadcn-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Department Filter
+        document.querySelectorAll('.dept-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.dept-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Filter staff cards
+                const dept = this.getAttribute('data-dept');
+                document.querySelectorAll('.staff-card').forEach(card => {
+                    if (dept === 'all' || card.getAttribute('data-dept') === dept) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Staff Card Click (opens modal)
+        document.querySelectorAll('.staff-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.getElementById('staffModal').classList.add('active');
+            });
+        });
+        
+        // Close Modals
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('staffModal').classList.remove('active');
+        });
+        
+        document.getElementById('closeCareers').addEventListener('click', function() {
+            document.getElementById('careersModal').classList.remove('active');
+        });
+        
+        // Open Careers Modal
+        document.getElementById('openCareers').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('careersModal').classList.add('active');
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target.classList.contains('staff-modal')) {
+                e.target.classList.remove('active');
+            }
+        });
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>
